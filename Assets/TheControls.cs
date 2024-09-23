@@ -4,7 +4,7 @@ using Unity.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TheControls : MonoBehaviour
 {
     public AudioClip jump;
     public AudioClip backgroundmusic;
@@ -24,6 +24,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sfxPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,7 +46,9 @@ public class NewBehaviourScript : MonoBehaviour
     private void Jump()
     {
         // Add an upward force for jumping 
+        sfxPlayer.PlayOneShot(jump);
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
     }
 
     private void OnDrawGizmosSelected()
