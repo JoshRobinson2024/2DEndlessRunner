@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class TheControls : MonoBehaviour
 {
+    Animator anim;
     public AudioClip jump;
     public AudioClip backgroundmusic;
 
@@ -23,6 +24,7 @@ public class TheControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sfxPlayer = GetComponent<AudioSource>();
     }
@@ -41,6 +43,8 @@ public class TheControls : MonoBehaviour
         {
             Jump();
         }
+        
+        anim.SetBool("IsGrounded", isGrounded);
     }
 
     private void Jump()
