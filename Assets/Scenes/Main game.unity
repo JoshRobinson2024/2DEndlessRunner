@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4956c8e80e9f44d43a9abec9a48565b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.003
+  speed: 0.001
 --- !u!64 &677709912
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1637,7 +1637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jump: {fileID: 8300000, guid: 17fa219765fcf054e9e77572702365e9, type: 3}
-  backgroundmusic: {fileID: 0}
+  backgroundmusic: {fileID: 8300000, guid: 17fa219765fcf054e9e77572702365e9, type: 3}
   sfxPlayer: {fileID: 0}
   musicPlayer: {fileID: 0}
   moveSpeed: 6
