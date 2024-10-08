@@ -9,9 +9,14 @@ public class Score : MonoBehaviour
     public int coinCount;
     public TMP_Text coinText;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        coinText.text = "Score:" + coinCount.ToString();
+        // check if the object colliding with the coin is the player
+        if (other.gameObject.CompareTag("Coin"))
+        {
+
+            coinCount += 100;
+            coinText.text = "Score:" + coinCount.ToString();
+        }
     }
 }
