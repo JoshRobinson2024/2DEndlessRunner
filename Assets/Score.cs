@@ -9,6 +9,7 @@ public class Score : MonoBehaviour
     static public int coinCount;
     public TMP_Text coinText;
     public bool endMenu;
+    public bool startMenu;
     void OnTriggerEnter2D(Collider2D other)
     {
         // check if the object colliding with the coin is the player
@@ -23,7 +24,7 @@ public class Score : MonoBehaviour
 
             coinCount -= 50;
             coinText.text = "Score:" + coinCount.ToString();
-            GetComponent<Text>().color = Color.blue;
+            
         }
         }
     
@@ -33,5 +34,16 @@ public class Score : MonoBehaviour
         {
             coinText.text = "Score:" + coinCount.ToString();
         }
+        if (startMenu)
+        {
+            coinCount = 0;
+        }
     }
+    public void resetScore()
+    {
+        coinCount = 0;
+    }
+    
+        
+    
 }

@@ -11,10 +11,7 @@ public class StarShardCollection : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            if (isBlue)
-            {
-
-            }
+            
             
         }
     }

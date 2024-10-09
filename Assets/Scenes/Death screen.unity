@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 332830033}
   - component: {fileID: 332830032}
   - component: {fileID: 332830036}
+  - component: {fileID: 332830037}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -308,6 +309,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7cc47dd69d97374086fa5b52700387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &332830037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332830031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9ee2c4062b83d47830273781f39fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 0}
+  endMenu: 1
+  startMenu: 0
 --- !u!1 &444560110
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +540,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 332830037}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: resetScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 332830036}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
@@ -1016,6 +1044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinText: {fileID: 444560112}
   endMenu: 1
+  startMenu: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class TheControls : MonoBehaviour
     Animator anim;
     public AudioClip jump;
     public AudioClip backgroundmusic;
-
+    
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
 

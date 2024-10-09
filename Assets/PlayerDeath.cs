@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    public Score SC;
     public float fallThreshold = -10f;
     public AudioSource sfxPlayer;
     void Start()
@@ -17,6 +18,7 @@ public class PlayerDeath : MonoBehaviour
         if (transform.position.y < fallThreshold)
         {
             SceneManager.LoadSceneAsync(3);
+            
         }
     }
 
