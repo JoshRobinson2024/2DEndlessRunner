@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class StarShardCollection : MonoBehaviour
 {
+    public bool isBlue;
     private void OnTriggerEnter2D(Collider2D other)
     {
         // check if the object colliding with the coin is the player
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+            if (isBlue)
+            {
+
+            }
             
         }
     }

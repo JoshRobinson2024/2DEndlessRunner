@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5762730073721233838}
   - component: {fileID: 774517236866919587}
   m_Layer: 0
-  m_Name: staircase shard
+  m_Name: staircase blue shard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 5963001012871330598}
   m_Layer: 0
   m_Name: Red top shard
-  m_TagString: Coin
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,7 +315,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d99850f5f79e5364491ea3bd07143d3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eaf8c4c6d64914b4588d483e61743f27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1d8c54281e25045bcb5a3f77211bdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBlue: 0
 --- !u!61 &5963001012871330598
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4845518730814060407}
   - component: {fileID: 8694082442654177881}
   m_Layer: 3
-  m_Name: 7 platforms  right shard
+  m_Name: 7 platforms  right shard 1
   m_TagString: CleanUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
